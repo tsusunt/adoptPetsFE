@@ -1,110 +1,15 @@
-body {
-  min-height: 2000px;
-}
+@import url(https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap);
 
 * {
-  font-family: 'Afacad Flux';
+  font-family: "Afacad Flux";
 }
-
 /* Navbar */
-.nav-item {
-  justify-content: center;
-  align-items: center;
-  font-size: 30px;
-  margin-right: 20px;
-}
-
-.dropdown-item {
-  font-size: 25px;
-}
-
-.signin,
-.signup {
-  background-color: transparent;
-  border: none;
-}
-
-.signin:hover,
-.signup:hover {
-  border: none;
+.sign:hover{
   transform: translateY(-3px);
 }
-
-/* Main Menu */
-.hero-section {
-  padding: 50px 0;
-}
-
-/* .hero-section_2 {
-    padding: 20px 10;
-  } */
-
-.hero-text {
-  color: #2c3e50;
-}
-
-.hero-text h1 {
-  font-size: 3rem;
-  font-weight: bold;
-}
-
-.hero-text h2 {
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-.hero-text p {
-  font-size: 1.2rem;
-  color: #7f8c8d;
-}
-
-.supported-by {
-  margin-top: 30px;
-}
-.supported-by img {
-  max-width: 100px;
-  margin: 0 10px;
-}
-.pet-images img.desktop {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-
-.pet-images img.mobile {
-  display: none;
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-
-@media (max-width: 768px) {
-  .signin {
-    margin-bottom: 15px;
-  }
-  .supported-by {
-    margin-bottom: 50px;
-  }
-  .pet-images img.desktop {
-    display: none;
-  }
-  .pet-images img.mobile {
-    display: block;
-  }
-}
-
-/* info-menu */
-.numtxt {
-  display: flex;
-}
-.numtx:nth-child(2) {
-  transition-delay: 200ms;
-}
-.numtx:nth-child(3) {
-  transition-delay: 400ms;
-}
-.numtx:nth-child(4) {
-  transition-delay: 600ms;
+/* Login Dan Sign Up Html*/
+a,.sign {
+  text-decoration: none;
 }
 /* info menu dan simple quote */
 .hidden {
