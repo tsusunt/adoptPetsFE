@@ -1,14 +1,19 @@
 @import url(https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap);
 
+body {
+  min-height: 2000px;
+}
+
 * {
-  font-family: "Afacad Flux";
+  font-family: 'Afacad Flux';
 }
 /* Navbar */
-.sign:hover{
+.sign:hover {
   transform: translateY(-3px);
 }
 /* Login Dan Sign Up Html*/
-a,.sign {
+a,
+.sign {
   text-decoration: none;
 }
 /* info menu dan simple quote */
