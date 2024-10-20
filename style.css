@@ -11,6 +11,29 @@
 a,.sign {
   text-decoration: none;
 }
+
+@media (max-width: 768px) {
+  .adoption-text {
+      font-size: 27px !important;
+  }
+  .fotom{
+    height: auto;
+    width: 3rem;
+  }
+  .adopt-btn {
+    width: 8rem;
+    height: 2.3rem;
+    font-size: 15px !important;    
+  }
+
+.donate-link {
+    width: 10rem;
+    height: 2.3rem;
+    font-size: 15px !important;
+  }
+  
+}
+
 /* info menu dan simple quote */
 .hidden {
   opacity: 0;
