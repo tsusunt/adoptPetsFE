@@ -21,22 +21,16 @@ a,
   .adoption-text {
       font-size: 27px !important;
   }
-  .fotom{
-    height: auto;
-    width: 3rem;
-  }
   .adopt-btn {
     width: 8rem;
     height: 2.3rem;
     font-size: 15px !important;    
   }
-
-.donate-link {
+  .donate-link {
     width: 10rem;
     height: 2.3rem;
     font-size: 15px !important;
   }
-  
 }
 
 /* info menu dan simple quote */
