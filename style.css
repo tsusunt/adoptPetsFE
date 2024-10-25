@@ -19,12 +19,12 @@ a,
 
 @media (max-width: 768px) {
   .adoption-text {
-      font-size: 27px !important;
+    font-size: 27px !important;
   }
   .adopt-btn {
     width: 8rem;
     height: 2.3rem;
-    font-size: 15px !important;    
+    font-size: 15px !important;
   }
   .donate-link {
     width: 10rem;
@@ -44,4 +44,32 @@ a,
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
+}
+
+
+.card {
+  transition: transform 0.3s; /* Optional: Adds a hover effect */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Optional: Slightly enlarge the card on hover */
+}
+
+.card-hover-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(183, 198, 204, 0.3); /* Semi-transparent background */
+
+  display: none; /* Initially hidden */
+  padding: 20px;
+  align-items: center; /* Center text vertically */
+  justify-content: center; /* Center text horizontally */
+  text-align: center; /* Center text */
+}
+
+.card:hover .card-hover-info {
+  display: flex; /* Show on hover */
 }
