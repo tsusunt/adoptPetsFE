@@ -3,14 +3,18 @@ const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     console.log(entry);
     if (entry.isIntersecting) {
-      entry.target.classList.add("show");
+      entry.target.classList.add('show');
+      entry.target.classList.add('show-atas');
+      entry.target.classList.add('show-bwh');
     } else {
-      entry.target.classList.remove("show");
+      entry.target.classList.remove('show');
+      entry.target.classList.remove('show-atas');
+      entry.target.classList.remove('show-bwh');
     }
   });
 });
 
-const hiddenElements = document.querySelectorAll(".hidden");
+const hiddenElements = document.querySelectorAll('.hidden, .hidden-atas, .hidden-bwh');
 hiddenElements.forEach((el) => observer.observe(el));
 
 // info-menu nambah angka
@@ -30,42 +34,42 @@ function animateValue(id, start, end, duration) {
 }
 
 window.onload = function () {
-  animateValue("volunteerCount", 0, 500, 2000);
-  animateValue("dogsRescuedCount", 0, 169, 2000);
-  animateValue("catsRescuedCount", 0, 348, 2000);
+  animateValue('volunteerCount', 0, 500, 2000);
+  animateValue('dogsRescuedCount', 0, 169, 2000);
+  animateValue('catsRescuedCount', 0, 348, 2000);
 };
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener('DOMContentLoaded', function () {
   const radios = document.querySelectorAll('input[name="btnradio"]');
-  const petCards = document.querySelectorAll(".data-pets .col-md-4");
+  const petCards = document.querySelectorAll('.data-pets .col-md-4');
 
   // Function to filter cards based on the selected radio
   function filterCards() {
     const selectedValue = document.querySelector('input[name="btnradio"]:checked').id;
 
     petCards.forEach((card) => {
-      const petType = card.getAttribute("data-type");
+      const petType = card.getAttribute('data-type');
 
       // Show "All", "Cat" or "Dog" based on selection
-      if (selectedValue === "btnradio3") {
+      if (selectedValue === 'btnradio3') {
         // "All" - Show all pets
-        card.style.display = "block";
-      } else if (selectedValue === "btnradio1" && petType === "cat") {
+        card.style.display = 'block';
+      } else if (selectedValue === 'btnradio1' && petType === 'cat') {
         // "Cat" - Show only cat pets
-        card.style.display = "block";
-      } else if (selectedValue === "btnradio2" && petType === "dog") {
+        card.style.display = 'block';
+      } else if (selectedValue === 'btnradio2' && petType === 'dog') {
         // "Dog" - Show only dog pets
-        card.style.display = "block";
+        card.style.display = 'block';
       } else {
         // Hide other pets
-        card.style.display = "none";
+        card.style.display = 'none';
       }
     });
   }
 
   // Event listener to trigger the filter whenever a radio button is selected
   radios.forEach((radio) => {
-    radio.addEventListener("change", filterCards);
+    radio.addEventListener('change', filterCards);
   });
 
   // Initial filter on page load

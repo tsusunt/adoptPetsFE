@@ -38,12 +38,36 @@ a,
   opacity: 0;
   filter: blur(5px);
   transform: translateX(-100%);
-  transition: all 1s;
+  transition: all 1.5s;
 }
 .show {
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
+}
+
+.hidden-atas {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(-100%);
+  transition: all 1.5s;
+}
+.show-atas {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+
+.hidden-bwh {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(100%);
+  transition: all 1.5s;
+}
+.show-bwh {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
 }
 
 .numtxt {
@@ -59,6 +83,7 @@ a,
   transition-delay: 600ms;
 }
 
+/* adoption pet card */
 .card {
   transition: transform 0.3s; /* Optional: Adds a hover effect */
 }
