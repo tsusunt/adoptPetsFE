@@ -3,13 +3,9 @@ const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     console.log(entry);
     if (entry.isIntersecting) {
-      entry.target.classList.add('show');
-      entry.target.classList.add('show-atas');
-      entry.target.classList.add('show-bwh');
+      entry.target.classList.add('show', 'show-atas', 'show-bwh');
     } else {
-      entry.target.classList.remove('show');
-      entry.target.classList.remove('show-atas');
-      entry.target.classList.remove('show-bwh');
+      entry.target.classList.remove('show', 'show-atas', 'show-bwh');
     }
   });
 });
